@@ -41,13 +41,34 @@
       transition: 0.2s;
     }
 
-    @media (max-width: 480px) {
+    /* @media (max-width: 480px) {
       .img-row {
         gap: 0;
         padding: 0;
       }
       .img-row img {
         height: 320px;
+      }
+    } */
+
+     @media (max-width: 480px) {
+      body {
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        padding-top: 0px;
+      }
+
+      .img-row {
+        gap: 0;
+        padding: 0;
+        justify-content: center;
+      }
+
+      .img-row img {
+        height: 320px;
+        width: auto;
+        margin: 0;
       }
     }
 
@@ -108,7 +129,6 @@
       backdrop-filter: blur(5px);
     }
   </style>
-  
 </head>
 
 <body>
